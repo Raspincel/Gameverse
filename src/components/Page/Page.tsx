@@ -28,7 +28,7 @@ export default function Page({ page, searchFilter, genre, setErrorMessage }: Pag
   const [fetchTimeout, setFetchTimeout] = useState(false)
   
     const fetchData = async ()=> {
-        const config = { headers: { 'dev-email-address': import.meta.env.VITE_EMAIL } };
+        const config = { headers: { 'dev-email-address': 'email@gmail.com' } };
 
         const { data } = await axios.get("https://games-test-api-81e9fb0d564a.herokuapp.com/api/data", config);
 
@@ -61,7 +61,7 @@ export default function Page({ page, searchFilter, genre, setErrorMessage }: Pag
     
         setErrorMessage(message)
     } else if (isLoading) {
-      setErrorMessage("Carregando conteúdo. Aguarde!")
+      setErrorMessage("Carregando o conteúdo. Aguarde!")
     }
 
   }, [isError, data, setGames]);
