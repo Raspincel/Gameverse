@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-export const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle<{}>`
     :root {
         --ultra-dark: #333;
         --ultra-light: #EFEFEF;
