@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react'
 import WebFont from 'webfontloader'
-import { GlobalStyle } from './styles/globalStyles'
 import Page from './components/Page/Page'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { MainContainer } from './style'
@@ -10,6 +9,7 @@ import Select from './components/Select/Select'
 import { SetPage } from './components/SetPage/SetPage'
 import Header from './layouts/Header/Header'
 import Footer from './layouts/Footer/Footer'
+
 
 function App() {
   const [search, setSearch] = useState("")
@@ -59,7 +59,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
 
-        <GlobalStyle {...temp} />
+        
       <MainContainer>
         <Header/>
         {(errorMessage) ? <span className='error-message'><h1>{errorMessage}</h1></span> : <></>}
