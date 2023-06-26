@@ -6,9 +6,9 @@ export default function NoGamesPage() {
     const cardModel: CardProps = {
         id: 0,
         title: 'Nothing to see here',
-        thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Red_question_mark.svg/1200px-Red_question_mark.svg.png',
+        thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/800px-SNice.svg.png',
         short_description: "There are no games in this page with this combination of filters!",
-        game_url: '/',
+        game_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/800px-SNice.svg.png',
         genre: 'None',
         platform: 'Yours',
         publisher: 'No one',
